@@ -1,0 +1,923 @@
+@font-face {
+    font-family: sunFont;
+    src: url(fonts/Chomsky.otf);
+}
+
+* {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main-page-container {
+    background-image: url('images/edge-pic-edited-4.png');
+    height: 100vh; 
+    background-position: center; 
+    background-size: cover; 
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    .nav-wrapper {
+        display: block;
+    }
+
+    .main-page-container {
+        background-position-x: -200px;
+        background-image: url('images/edge-pic-edited-4.png');
+        height: default; 
+        background-attachment: local;
+    }
+}
+
+.name-slate {
+    color: rgba(255, 255, 255, 0); 
+    font-size: 7.5vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.10em;
+    font-family: 'Bellota Text', 'Akshar', sans-serif;
+    font-weight: bold;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    -webkit-text-stroke: #ffffff 1px;
+    text-decoration: none;
+
+}
+
+.name-slate-logo {
+    margin-left: 40px;
+    width: 600px;
+}
+
+@media (max-width: 500px) {
+    .name-slate {
+        display: flex;
+        justify-content: center;
+        margin-top: 0vh;
+        margin-left: auto; 
+        margin-right: auto; 
+        padding-top: 40px;
+        font-size: 3em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+    }
+
+    .nav-bar a {
+        display: none;
+    }
+}
+
+.nav-bar {
+    margin-right: 3vw;
+    margin-top: 4vh;
+    display: flex;
+}
+
+.nav-bar a {
+    margin: 0vh 1vw;
+    line-height: 50px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.742); 
+    font-family: 'Bellota Text', cursive;
+    font-size: 2.75vh;
+}
+
+.underline-effect-link a::before,
+.underline-effect-link a::after { 
+    content: ''; 
+    background-color: rgb(255, 255, 255);
+    position: relative; 
+    display: block;
+    left: 0;
+    height: 1px;
+    width: 0;
+    transition: 0.9s; 
+}
+
+.underline-effect-link a:hover::before, 
+.underline-effect-link a:hover::after { 
+    width: 100%; 
+}
+
+.landing-page {
+    color: rgba(255, 255, 255, 0.742);
+    margin-top: 35vh;
+    font-size: 6vh;
+    letter-spacing: 0.25em;
+    width: 47%;
+    margin-left: 45vw;
+    text-align: center;
+    font-family: 'Bellota Text', cursive;
+}
+
+.auto-type1-container {
+    display: inline-block;
+    height: 120px;
+}
+
+.landing-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 11vh;
+}
+
+.landing-buttons button {
+    color: rgb(255, 255, 255);
+    font-size: 2.75vh;
+    background: #ffffff00;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 153, 255, 0.25);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25em;
+    padding: 1.5vh 2.75vh;
+    border-radius: 10px;
+    font-family: 'Bellota Text';
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.landing-buttons button:hover { 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background: #fff;
+    border-color: #000000;
+    color: #000000;
+    transition-duration: 0.7s;
+}
+
+.contact-button {
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.learn-button {
+    cursor: pointer; 
+}
+
+.learn-more-link {
+    text-decoration: none;
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+.down-arrow {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25em;
+    margin-left: 4px;
+    font-size: 3vh;
+}
+
+@media (max-width: 500px) {
+    .landing-page {
+        margin-top: 60%;
+        font-size: 2em;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landing-buttons button {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+}
+
+.xp-page-container {
+    height: fit-content;
+}
+
+.xp-page-sub-container-1 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.20) 99%),
+    url('images/sun-building-edited.jpg');
+    height: fit-content; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.xp-heading {
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.25em;
+    font-family: 'Bellota Text', 'Akshar', sans-serif;
+    padding-top: 7vh;
+    width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.underline-effect-heading a::before,
+.underline-effect-heading a::after { 
+    content: ''; 
+    position: relative; 
+    background-color: rgb(255, 255, 255);
+    display: flex; 
+    height: 1px;
+    /* width: 0; */
+    /* transition: 0.9s;  */
+}
+
+/* .underline-effect a:hover::before, 
+.underline-effect a:hover::after { 
+    width: 100%; 
+} */
+
+@keyframes underline-animation { 
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+.underline-effect-heading a::before, 
+.underline-effect-heading a::after { 
+    animation-name: underline-animation; 
+    animation-duration: 3s;
+}
+
+.xp-heading a {
+    color: #fff; 
+    text-decoration: none;
+}
+
+.sun-heading {
+    justify-content: start;
+    margin-left: 5vw;
+    margin-top: 7vh;
+    width: fit-content;
+}
+
+.sun-title {
+    color: #fff; 
+    font-family: sunFont, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 7vh;
+    text-decoration: none;
+}
+
+.sun-date {
+    color: #fff;
+    font-family: 'Bellota Text', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sun-points-ul {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 7vh;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.9vh;
+    list-style-type: none;
+}
+
+.sun-points-ul li {
+    padding: 0vw 1vw; 
+    width: 400px;
+}
+
+.pente-section {
+    margin-top: 7vh;
+    margin-left: 5vw; 
+}
+
+.pente-heading {
+    color: #fff;
+    display: flex;
+}
+
+.pente-logo {
+    font-family: 'Noto Serif Armenian', serif;
+    font-size: 5vh;
+    text-decoration: none;
+    color: #fff;
+}
+
+.pente-game-project {
+    padding: 2vh 1.5vw;
+    font-family: 'Bellota Text';
+    font-size: 2.5vh;
+    display: none;
+}
+
+.pente-date {
+    color: #fff;
+    font-family: 'Bellota Text', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pente-points-ul {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 7vh;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.9vh;
+    list-style-type: none;
+}
+
+.pente-points-ul li {
+    padding: 0vw 1vw;
+    width: 400px;
+}
+
+.asteroids-section {
+    margin-top: 7vh;
+    margin-left: 5vw; 
+}
+
+.asteroids-heading {
+    color: #fff;
+    display: flex;
+}
+
+.asteroids-logo {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 6vh;
+    text-decoration: none;
+    color: #fff;
+}
+
+.asteroids-game-project {
+    padding: 2vh 1.5vw;
+    font-family: 'Bellota Text';
+    font-size: 2.5vh;
+    display: none; 
+}
+
+.asteroids-date {
+    color: #fff;
+    font-family: 'Bellota Text', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.asteroids-points-ul {
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 7vh;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.9vh;
+    list-style-type: none;
+}
+
+.asteroids-points-ul li {
+    padding: 0vw 1vw;
+    width: 400px;
+}
+
+.website-section {
+    margin-top: 7vh;
+    margin-left: 5vw; 
+}
+
+.website-heading {
+    color: #fff;
+    display: flex;
+}
+
+.website-logo {
+    font-family: 'Aoboshi One', serif;
+    font-size: 5vh;
+    text-decoration: none;
+    color: #fff;
+}
+
+.website-date {
+    color: #fff;
+    font-family: 'Bellota Text', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.website-points-ul {
+    color: #fff;
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 5vh;
+    margin-right: 7vh;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.9vh;
+    list-style-type: none;
+}
+
+.website-points-ul li {
+    padding: 0vw 1vw;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 500px) {
+    .xp-page-container {
+        height: fit-content;
+        background-size: contain;
+    }
+
+    .sun-title {
+        font-size: 50px;
+        line-height: 40px;    
+    }
+
+    .sun-points-ul {
+        display: inline-block;
+        margin-left: 2vw;
+        margin-right: 10vw;
+        font-size: 25px;
+        margin-top: 10px;
+        list-style-type: disc;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .sun-points-ul li {
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .pente-logo {
+        font-size: 42px;
+    }
+
+    .pente-points-ul {
+        display: inline-block;
+        margin-left: 2vw;
+        margin-right: 10vw;
+        font-size: 25px;
+        margin-top: 10px;
+        list-style-type: disc;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .pente-points-ul li {
+        padding-top: 30px;
+        width: 100%
+    }
+
+    .asteroids-logo { 
+        font-size: 50px;
+    }
+
+    .asteroids-points-ul {
+        display: inline-block;
+        margin-left: 2vw;
+        margin-right: 10vw;
+        font-size: 25px;
+        margin-top: 10px;
+        list-style-type: disc;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .asteroids-points-ul li {
+        padding-top: 30px;
+        width: 100%
+    }
+
+    .website-logo {
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+
+    .website-points-ul {
+        display: inline-block;
+        margin-left: 2vw;
+        margin-right: 10vw;
+        font-size: 25px;
+        margin-top: 10px;
+        list-style-type: disc;
+        margin-bottom: 70px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    .website-points-ul li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+}
+
+.education-page-container {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.775) 99%),
+    url('images/gates-building-edited.png');
+    height: 110vh; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.education-heading {
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.25em;
+    font-family: 'Bellota Text', 'Akshar', sans-serif;
+    padding-top: 7vh;
+    padding-left: 0; 
+    padding-right: 0; 
+}
+
+.education-heading a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cornell-heading-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+
+.cornell-web-link {
+    text-decoration: none;
+}
+
+.cornell-logo {
+    width: 4vw;
+    height: 4vw;
+    padding-right: 17px;
+}
+
+.cornell-text {
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vh;
+}
+
+.cornell-date {
+    color: #fff;
+    font-family: 'Bellota Text', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 4px;
+    font-size: 3vh;
+}
+
+.cornell-statement {
+    color: #fff;
+    margin-top: 3vh;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.9vh;
+    text-align: center;
+    width: 71vw;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.activities-and-classes-container {
+    display: flex;
+    justify-content: center;
+}
+
+.activities-container {
+    width: 45vw; 
+    margin-top: 12vh;
+}
+
+.activities-heading {
+    color: #fff; 
+    font-size: 4vh;
+    letter-spacing: 0.10em;
+    font-family: 'Bellota Text', 'Akshar', sans-serif;
+    text-align: center;
+}
+
+.sun-activity-container {
+    display: flex; 
+}
+
+.sun-activity-logo {
+    margin-top: 2vh;
+    margin-left: 2vw; 
+    width: 6vw;
+}
+
+.sun-activity-text {
+    color: #fff;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.5vh;
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+.meinig-activity-container {
+    display: flex; 
+}
+
+.meinig-activity-logo {
+    margin-top: 2vh;
+    margin-left: 2vw; 
+    width: 6vw;
+}
+
+.meinig-activity-text {
+    color: #fff;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.5vh;
+    padding-top: 3vh;
+    padding-left: 1vw;
+}
+
+.classes-container {
+    width: 43vw; 
+    margin-top: 12vh;
+    padding-right: 0vw;
+}
+
+.classes-heading {
+    color: #fff; 
+    font-size: 4vh;
+    letter-spacing: 0.10em;
+    font-family: 'Bellota Text', 'Akshar', sans-serif;
+    text-align: center;
+}
+
+.class-points {
+    color: #fff;
+    font-family: 'SF Pro', 'Bellota Text';
+    font-weight: 700;
+    font-size: 2.5vh;
+    line-height: 5vh;
+    list-style-type: none;
+    padding-top: 2vh;
+    padding-left: 5vw;
+}
+
+.class-points a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cl-item {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.cl-number {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.cl-dash {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cl-name {
+    display: inline-block;
+    width: 70%;
+    line-height: 30px;
+    padding-top: 4px;
+}
+
+@media (max-width: 500px) {
+    .education-page-container {
+        height: fit-content; 
+    }
+
+    .cornell-logo {
+        width: 50px;
+        height: 50px;
+        padding-right: 11px;
+    }
+    
+    .cornell-text {
+        font-size: 2em;
+    }
+    
+    .cornell-date {
+        font-size: 15px;
+    }
+    
+    .cornell-statement {
+        font-size: 21px;
+        text-align: center;
+        width: 400px;
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 50px;
+        display: none;
+    }
+
+    .activities-and-classes-container {
+        display: block;
+        
+    }
+
+    .activities-container {
+        width: 100%; 
+        margin-top: 80px;
+    }
+    
+    .sun-activity-logo {
+        width: 13vw;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .sun-activity-text {
+        font-size: 20px;
+        width: 75%;
+    }
+    
+    .meinig-activity-logo {
+        width: 13vw;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .meinig-activity-text {
+        font-size: 20px;
+        width: 75%;
+    }
+    
+    .classes-container {
+        width: 100%; 
+        padding-bottom: 70px;
+        margin-top: 80px;
+    }
+
+    .class-points {
+        font-size: 20px;
+        width: 80%;
+        line-height: 40px;
+    }
+}
+
+.contact-page-container {
+    background-image: url('images/signing-pic-edited.png');
+    height: 39vh; 
+    background-size: contain;
+    background-attachment: local;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-heading {
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.25em;
+    font-family: 'Bellota Text', 'Akshar', sans-serif;
+    padding-top: 7vh;
+    padding-left: 0; 
+    padding-right: 0; 
+}
+
+.contact-heading a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media-container {
+    margin-top: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media-container a {
+    text-decoration: none;
+}
+
+.instagram-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 14vw;
+    align-items: center;
+}
+
+.social-media-image {
+    width: 6vh;
+}
+
+.social-media-handle {
+    color: white;
+    font-family: 'Bellota Text', 'Rubik', sans-serif;
+    letter-spacing: 0.10em;
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.linkedin-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 24vw;
+    align-items: center;
+}
+
+.gmail-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25vw;
+    align-items: center;
+}
+
+.twitter-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 17vw;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .contact-page-container {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.775) 99%),
+        url('images/signing-pic-edited.png');
+        height: fit-content; 
+        background-size: contain;
+        background-attachment: fixed;
+        background-position-x: center;
+        background-position-y: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .social-media-container {
+        margin-top: 8vw;
+        display: block;
+    }
+    
+    .instagram-container {
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .instagram-container * {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .social-media-image {
+        width: 7vw;
+    }
+    
+    .social-media-handle {
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 6vw;
+    }
+    
+    .linkedin-container {
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+    }
+
+    .linkedin-container * {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .gmail-container {
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+    }
+
+    .gmail-container * {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .twitter-container {
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 38px;
+    }
+
+    .twitter-container * {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 72px;
+    }
+}
