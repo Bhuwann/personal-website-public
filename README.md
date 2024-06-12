@@ -18,7 +18,8 @@ This is my personal website where I display my resume, projects, and other perso
 - **CSS3**
 - **JavaScript**
 - **Firebase Hosting**
-- **Typed.js** 
+- **Typed.js**
+- **Google Domains**
 
 ## Contact 
 
