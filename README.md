@@ -5,8 +5,8 @@ Welcome to the repository for my personal website. This project showcases my exp
 
 ## Table of Contents
 
-- Overview
-- Technologies Used
+- **Overview**
+- **Technologies Used**
 
 ### Overview
 
