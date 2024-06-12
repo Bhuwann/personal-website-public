@@ -1,7 +1,7 @@
 <!-- # personal-website-public -->
 # Personal Website
 
-Welcome to the repository for my personal website. This project showcases my experience, projects, educational background, and hobbies. Check out the completed product here: https://bhuwanbhattarai.com/ (Last Updated: 07/01/2023)
+Welcome to the repository for my personal website. This project showcases my experience, projects, educational background, and hobbies. Check out the completed product here: <a href="https://bhuwanbhattarai.com/" target="_blank">bhuwanbhattarai.com</a> (Last Updated: 07/01/2023)
 
 ## Table of Contents
 
